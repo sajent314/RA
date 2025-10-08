@@ -1,4 +1,9 @@
 {
   "name": "Ra_App",
-  "displayName": "Ra_App"
+  "displayName": "Ra_App",
+  "extra": {
+    "eas": {
+      "projectId": "b31e936f-b006-4730-acae-dbe813de708f"
+    }
+  }
 }
