@@ -1,11 +1,9 @@
 {
-  "expo": {
-    "name": "Ra App", 
-    "slug": "ra-6ddnj0cvabne9iwx-sc3f",
-    "extra": {
-      "eas": {
-        "projectId": "ra-6ddnj0cvabne9iwx-sc3f"
-      }
+  "name": "Ra_App",
+  "displayName": "Ra_App",
+  "extra": {
+    "eas": {
+      "projectId": "a04b137f-4213-46cd-8057-ec2699895e04"
     }
   }
 }
