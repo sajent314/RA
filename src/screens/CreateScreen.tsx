@@ -1,37 +1,38 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 import { colors } from '../constants/colors';
 
-export default function CreateScreen() {
+const CreateScreen = ({ navigation }: { navigation: any }) => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        <Text style={styles.title}>Create</Text>
-        <Text style={styles.subtitle}>Coming soon...</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Create</Text>
+      <View style={styles.buttonContainer}>
+        <Button title="Start a Live Party Stream" onPress={() => navigation.navigate('CreateParty')} color={colors.turquoise} />
       </View>
-    </SafeAreaView>
+      <View style={styles.buttonContainer}>
+        <Button title="Create a New Challenge" onPress={() => navigation.navigate('CreateChallenge')} color={colors.turquoise} />
+      </View>
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
-  },
-  content: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 20,
+    backgroundColor: colors.white,
   },
   title: {
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: 'bold',
-    color: colors.textPrimary,
-    marginBottom: 8,
+    color: colors.darkGray,
+    marginBottom: 32,
   },
-  subtitle: {
-    fontSize: 16,
-    color: colors.textSecondary,
+  buttonContainer: {
+    marginVertical: 8,
+    width: '80%',
   },
 });
+
+export default CreateScreen;
