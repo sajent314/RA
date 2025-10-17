@@ -1,9 +1,34 @@
 {
-  "name": "Ra_App",
-  "displayName": "Ra_App",
-  "extra": {
-    "eas": {
-      "projectId": "d41fad10-4fc3-4492-bc40-cc0fff872ff0"
+  "expo": {
+    "name": "Ra_App",
+    "slug": "ra_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jones314.ra_app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.jones314.ra_app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d41fad10-4fc3-4492-bc40-cc0fff872ff0"
+      }
     }
   }
 }
